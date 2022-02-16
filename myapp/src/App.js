@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import * as Sentry from "@sentry/browser";
 import { BrowserTracing } from "@sentry/tracing";
@@ -19,10 +18,15 @@ Sentry.init({
 });
 
 myUndefinedFunction();
+console.log(arryThatDoesntExist);
 
 function App() {
   return (
-    <h1>Hello World 0.0</h1>
+    
+    <div>
+      <h1>Hello World 0.0</h1>
+      <h1>Version Change?</h1>
+    </div>
   );
 }
 
