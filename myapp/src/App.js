@@ -2,6 +2,7 @@ import './App.css';
 import * as Sentry from "@sentry/browser";
 import { BrowserTracing } from "@sentry/tracing";
 
+
 Sentry.init({
   dsn: "https://83555e1d5a4744ed9e87127f6c0f6509@o1145026.ingest.sentry.io/6209761",
 
@@ -17,7 +18,7 @@ Sentry.init({
 
 });
 
-myUndefinedFunction();
+anotherUndefinedFunction();
 console.log(arryThatDoesntExist);
 
 function App() {
